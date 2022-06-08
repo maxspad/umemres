@@ -1,0 +1,22 @@
+{
+  "name": "umemresources",
+  "version": "1.0.0",
+  "description": "A compilation of on-shift resources for UM Emergency Medicine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxspad/umemresources.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxspad/umemresources/issues"
+  },
+  "homepage": "https://github.com/maxspad/umemresources#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
