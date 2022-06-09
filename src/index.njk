@@ -1,49 +1,17 @@
 ---
 layout: layout.njk
 title: 🦝 UM EM Resources
-grid:
-    -
-        - 
-            colTitle: The U
-            links:
-                - Hi
-                - there
-        -
-            colTitle: Joe's
-            links:
-                - link1
-                - link2
-        -
-            colTitle: Hurley
-            links:
-                - link1
-                - link2
-    -
-        - 
-            colTitle: Antimicrobials
-            links:
-                - link1
-                - link2
-        - 
-            colTitle: Documentation
-            links:
-                - link1
-                - link2 
-        - 
-            colTitle: Other stuff
-            links:
-                - Other stuff 1
-                - Other stuff 2
 ---
+
 {{ grid | log }}
 {% for row in grid %}
 <div class="row">
     {% for col in row %}
     <div class="col border px-4 py-2 m-2 bg-light">
-        <h2>{{ col.colTitle }}</h2>
+        <h2>{{ col.title }}</h2>
         <ul>
             {% for link in col.links %}
-            <li>{{link}}</li>
+            <li><a href="{{ link.href }}", target="_blank">{{ link.text }}</a></li>
             {% endfor %}
         </ul>
     </div>

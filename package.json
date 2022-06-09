@@ -18,5 +18,8 @@
   "homepage": "https://github.com/maxspad/umemresources#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "toml": "^3.0.0"
   }
 }

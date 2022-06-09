@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "title": "The U",
+            "links": [
+                {"text": "Paging", "href":"https://uhmspaging.med.umich.edu/homepaging/PagingSend/search.aspx"},
+                {"text": "Triage Guidelines", "href":"#"}
+            ]
+        },
+
+        {
+            "title": "Joe's",
+            "links": [
+                {"text": "Pre-filled Cert", "href": "cert.pdf"}
+            ]
+        },
+
+        {
+            "title": "Hurley",
+            "links": [
+                {"text": "Pre-filled Cert", "href": "cert.pdf"}
+            ]
+        }
+    ],
+
+    [
+        {
+            "title": "Other Stuff",
+            "links": [
+                {"text": "WikEM", "href": "https://wikem.org"}
+            ]
+        }
+    ]
+]
