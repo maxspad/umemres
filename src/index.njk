@@ -1,0 +1,101 @@
+---
+layout: layout.njk
+title: 🦝 UM EM Resources
+grid:
+    -
+        - 
+            colTitle: The U
+            links:
+                - Hi
+                - there
+        -
+            colTitle: Joe's
+            links:
+                - link1
+                - link2
+        -
+            colTitle: Hurley
+            links:
+                - link1
+                - link2
+    -
+        - 
+            colTitle: Antimicrobials
+            links:
+                - link1
+                - link2
+        - 
+            colTitle: Documentation
+            links:
+                - link1
+                - link2 
+        - 
+            colTitle: Other stuff
+            links:
+                - Other stuff 1
+                - Other stuff 2
+---
+{{ grid | log }}
+{% for row in grid %}
+<div class="row">
+    {% for col in row %}
+    <div class="col border px-4 py-2 m-2 bg-light">
+        <h2>{{ col.colTitle }}</h2>
+        <ul>
+            {% for link in col.links %}
+            <li>{{link}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% else %}
+    <p>Can't find shit in row</p>
+    {% endfor %}
+</div>
+{% else %}
+<p>Can't find shit</p>
+{% endfor %}
+
+{# <div class="row my-2">
+    <div class="col border px-4 py-2 mx-2 bg-light">
+        <h2>The U</h2>
+        <ul>
+            <li>hi</li>
+            <li>hi</li>
+        </ul>
+    </div>
+    <div class="col border px-4 py-2 mx-2 bg-light">
+        <h2>Joe's</h2>
+    </div>
+    <div class="col border px-4 py-2 mx-2 bg-light">
+        <h2>Hurley</h2>
+        <ul>
+            <li>Hi</li>
+        </ul>
+    </div>
+</div>
+<div class="row my-2">
+    <div class="col border px-4 py-2 mx-2 bg-light">
+        <h2>Antimicrobials</h2>
+        <ul>
+            <li>PNA</li>
+            <li>UT</li>
+            <li>Abdominal</li>
+            <li>Dosing</li>
+        </ul>
+    </div>
+    <div class="col border px-4 mx-2 py-2 bg-light">
+        <h2>Documentation</h2>
+        <ul>
+            <li>Discharge Instructions</li>
+            <li>Peds Discharge Instructions</li>
+        </ul>
+    </div>
+    <div class="col border px-4 mx-2 py-2 bg-light">
+        <h2>Other Stuff</h2>
+        <ul>
+            <li>Survival Guides</li>
+            <li>WikEm</li>
+            <li>UpToDate</li>
+        </ul>
+    </div>
+</div> #}
