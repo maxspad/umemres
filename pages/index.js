@@ -1,56 +1,34 @@
 import Layout from '../components/layout';
 import Gridbox from '../components/gridbox';
+import GridboxContents from '../components/gridboxcontents';
 
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
-export default function Home() {
+import links from '../data/links.json'
+
+export default function Home(props) {
     return (
         <Layout>
             <Container>
                 <Row>
                     <Gridbox>
-                        <h2>UofM</h2>
-                        <ul>
-                            <li>item 1</li>
-                            <li>item 2</li>
-                        </ul>
+                        <GridboxContents id="theU" data={links} />
                     </Gridbox>
                     <Gridbox>
-                        <h2>UofM</h2>
-                        <ul>
-                            <li>item 1</li>
-                            <li>item 2</li>
-                        </ul>
+                        <GridboxContents id="joes" data={links} />
                     </Gridbox>
                     <Gridbox>
-                        <h2>UofM</h2>
-                        <ul>
-                            <li>item 1</li>
-                            <li>item 2</li>
-                        </ul>
+                        <GridboxContents id="hurley" data={links} />
                     </Gridbox>
                     <Gridbox>
-                        <h2>UofM</h2>
-                        <ul>
-                            <li>item 1</li>
-                            <li>item 2</li>
-                        </ul>
+                        <GridboxContents id="abx" data={links} />
                     </Gridbox>
                     <Gridbox>
-                        <h2>UofM</h2>
-                        <ul>
-                            <li>item 1</li>
-                            <li>item 2</li>
-                        </ul>
+                        <GridboxContents id="doc" data={links} />
                     </Gridbox>
                     <Gridbox>
-                        <h2>UofM</h2>
-                        <ul>
-                            <li>item 1</li>
-                            <li>item 2</li>
-                        </ul>
+                        <GridboxContents id="other" data={links} />
                     </Gridbox>
                 </Row>
             </Container>

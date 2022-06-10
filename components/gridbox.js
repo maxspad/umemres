@@ -4,7 +4,7 @@ export default function Gridbox({ children }) {
     return (
         <>
         <Col lg={4} className="gy-3 gx-3">
-            <div className='border bg-light p-3'>
+            <div className='border bg-light p-3' style={{height: "100%"}}>
                 {children}
             </div>
         </Col>    
