@@ -16,8 +16,8 @@ export default function Layout({ children }) {
                         <Image src={"/raccoon.png"} height={75} width={75} layout="fixed" />
                     </Col>
                     <Col>
-                        <div class="display-6 text-dark pb-0">EM Resources</div>
-                        <small class="text-muted"><em>Fewer clicks, more happiness</em></small>
+                        <div className="display-6 text-dark pb-0">EM Resources</div>
+                        <small className="text-muted"><em>Fewer clicks, more happiness</em></small>
                     </Col>
                 </Row>
                 </Container>
@@ -30,18 +30,6 @@ export default function Layout({ children }) {
             This content is meant to be a useful aid; it does not replace clinical judgement. · © 2022 Maxwell Spadafore
         </footer>
     </Container>
-
-    <style jsx> {`
-        .my-container {
-            flex-direction: row-inline;
-            flex-wrap: nowrap;
-            display: inline;
-        }
-        .my-container-vert {
-            flex-direction: column;
-        }
-    `}
-    </style>
     </>
     );
 }
