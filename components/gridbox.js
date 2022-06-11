@@ -12,6 +12,7 @@ export default function Gridbox(props) {
                 <ul>
                     {data.links.map((obj, i) => 
                         <li>
+                            <a href={obj.href} className="text-decoration-none" target="_blank">{obj.icon}</a>
                             <a href={obj.href} target="_blank">{obj.text}</a>
                         </li>
                     )}
