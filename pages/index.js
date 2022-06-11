@@ -1,8 +1,8 @@
 import Layout from '../components/layout';
 import Gridbox from '../components/gridbox';
-import GridboxContents from '../components/gridboxcontents';
 
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
 import { Typeahead } from 'react-bootstrap-typeahead';
@@ -15,6 +15,7 @@ import fs from "fs";
 import path from 'path';
 
 import links from '../data/links.json'
+import { Form } from 'react-bootstrap';
 
 export default function Home(props) {
     const [selected, setSelected] = useState({id: 0, label: "nothing"});
@@ -22,64 +23,58 @@ export default function Home(props) {
         <Layout>
             <Container>
                 <Row>
-                    <Gridbox>
-                        <Typeahead
-                            options={props.pagingOptions}
-                            placeholder="Type service/pager/name"
-                            // highlightOnlyResult={true}
-                            emptyLabel="Press enter to search name/pager number..."
-                            allowNew={true}
-                            newSelectionPrefix="Search name/pager number: "
-                            id="paging-typeahead"
-                            size="sm"
-                            onChange={(sel) => {
-                                if (sel.length == 0) { return; }
+                    <Gridbox id="theU" data={links}>
+                        <Form className='mb-2'>
+                            <Row className='align-items-center g-2'>
+                            <Col xs="auto"><Form.Label>📟<a href="https://uhmspaging.med.umich.edu/homepaging/PagingSend/search.aspx">Paging:</a></Form.Label></Col>
+                            <Col xs="auto"><Typeahead
+                                options={props.pagingOptions}
+                                align="left"
+                                placeholder="Type service/pager/name"
+                                // highlightOnlyResult={true}
+                                emptyLabel="Press enter to search name/pager number..."
+                                allowNew={true}
+                                newSelectionPrefix="Search name/pager number: "
+                                id="paging-typeahead"
+                                size="sm"
+                                onChange={(sel) => {
+                                    if (sel.length == 0) { return; }
 
-                                sel = sel[0];
-                                const url_root = "https://uhmspaging.med.umich.edu/homepaging/PagingSend/"
-                                var url_to_open = "";
-                                if (sel.customOption == false) {
-                                    url_to_open = url_root + "oncallSchedules.aspx?val=" + sel.id;
-                                }
-                                else {
-                                     const sel_text = sel.label;
-                                     const sel_as_num = parseInt(sel_text);
-                                     console.log(sel_text, sel_as_num);
-                                     if (!isNaN(sel_as_num)) {
-                                         url_to_open = url_root + "searchResults.aspx?type=PAGER&val=" + sel_text + "&rec=1";
-                                     }
-                                     else {
-                                         url_to_open = url_root +  "searchResults.aspx?type=NAME&val=" + sel_text + "&rec=1";
-                                     }
-                                }
-                                window.open(url_to_open, "_blank");
-                                
-                                console.log("Hit selected, sel is ")
-                                console.log(sel)
-                                if (sel.length == 0) { setSelected({id: 0, label: "nothing"})}
-                                else {setSelected(sel[0])}
-                                // console.log(selected)
-                            }}
-                        >
-                        </Typeahead>
-                        {/* <p>You have selected {selected.id} {selected.label}</p> */}
-                        <GridboxContents id="theU" data={links} />
+                                    sel = sel[0];
+                                    const url_root = "https://uhmspaging.med.umich.edu/homepaging/PagingSend/"
+                                    var url_to_open = "";
+                                    if (sel.customOption == false) {
+                                        url_to_open = url_root + "oncallSchedules.aspx?val=" + sel.id;
+                                    }
+                                    else {
+                                        const sel_text = sel.label;
+                                        const sel_as_num = parseInt(sel_text);
+                                        console.log(sel_text, sel_as_num);
+                                        if (!isNaN(sel_as_num)) {
+                                            url_to_open = url_root + "searchResults.aspx?type=PAGER&val=" + sel_text + "&rec=1";
+                                        }
+                                        else {
+                                            url_to_open = url_root +  "searchResults.aspx?type=NAME&val=" + sel_text + "&rec=1";
+                                        }
+                                    }
+                                    window.open(url_to_open, "_blank");
+                                    
+                                    console.log("Hit selected, sel is ")
+                                    console.log(sel)
+                                    if (sel.length == 0) { setSelected({id: 0, label: "nothing"})}
+                                    else {setSelected(sel[0])}
+                                    // console.log(selected)
+                                }}
+                            >
+                            </Typeahead></Col>
+                        </Row>
+                        </Form>
                     </Gridbox>
-                    <Gridbox>
-                        <GridboxContents id="joes" data={links} />
-                    </Gridbox>
-                    <Gridbox>
-                        <GridboxContents id="hurley" data={links} />
-                    </Gridbox>
-                    <Gridbox>
-                        <GridboxContents id="abx" data={links} />
-                    </Gridbox>
-                    <Gridbox>
-                        <GridboxContents id="doc" data={links} />
-                    </Gridbox>
-                    <Gridbox>
-                        <GridboxContents id="other" data={links} />
-                    </Gridbox>
+                    <Gridbox id="joes" data={links} />
+                    <Gridbox id="hurley" data={links} />
+                    <Gridbox id="abx" data={links} />
+                    <Gridbox id="doc" data={links} />
+                    <Gridbox id="other" data={links} />
                 </Row>
             </Container>
         </Layout>

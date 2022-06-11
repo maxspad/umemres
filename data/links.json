@@ -2,7 +2,6 @@
     "theU" : {
         "title": "The U",
         "links": [
-            {"text": "📟 Paging", "href":"https://uhmspaging.med.umich.edu/homepaging/PagingSend/search.aspx"},
             {"text": "🏠 Clinical Homepage", "href": "https://www.med.umich.edu/clinical/"},
             {"text": "Triage Guidelines", "href":"https://em.i.medicine.umich.edu/clinical-operations/service-triage-guidelines"}
         ]
