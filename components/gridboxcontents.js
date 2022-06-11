@@ -4,11 +4,13 @@ export default function GridboxContents(props) {
     return (
         <>
         <h2>{data.title}</h2>
-        {data.links.map((obj, i) => 
-            <li>
-                <a href={obj.href} key={obj.text}>{obj.text}</a>
-            </li>
-        )}
+        <ul>
+            {data.links.map((obj, i) => 
+                <li>
+                    <a href={obj.href} target="_blank">{obj.text}</a>
+                </li>
+            )}
+        </ul>
         </>
     );
 }

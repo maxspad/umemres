@@ -11,14 +11,14 @@
     "joes" : {
         "title": "Joe's",
         "links": [
-            {"text": "Pre-filled Cert", "href": "cert.pdf"}
+            {"text": "Pre-filled Cert", "href": "joes/joes_cert.pdf"}
         ]
     },
 
     "hurley" : {
         "title": "Hurley",
         "links": [
-            {"text": "Pre-filled Cert", "href": "cert.pdf"}
+            {"text": "Pre-filled Cert", "href": "hurley/hurley_cert.pdf"}
         ]
     },
 
