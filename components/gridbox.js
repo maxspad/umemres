@@ -10,12 +10,16 @@ export default function Gridbox(props) {
                 <h2>{data.title}</h2>
                 {props.children}
                 <ul>
-                    {data.links.map((obj, i) => 
-                        <li>
-                            <a href={obj.href} className="text-decoration-none" target="_blank">{obj.icon}</a>
-                            <a href={obj.href} target="_blank">{obj.text}</a>
-                        </li>
-                    )}
+                    {data.links.map((obj, i) => {
+                        if ((obj.enabled) || (obj.enabled == null)) {
+                            return (
+                                <li>
+                                    <a href={obj.href} className="text-decoration-none" target="_blank">{obj.icon}</a>
+                                    <a href={obj.href} target="_blank">{obj.text}</a>
+                                </li>
+                            );
+                        }
+                    })}
                 </ul>
             </div>
         </Col>    

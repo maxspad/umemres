@@ -43,8 +43,8 @@
     "other" : {
         "title": "Other Stuff",
         "links": [
-            {"icon": "🩺", "text": "WikEM", "href": "https://wikem.org"},
-            {"icon": "🤔", "text": "UpToDate", "href": "https://uptodate.com"}
+            {"icon": "🩺", "text": "WikEM", "href": "https://wikem.org", "enabled": false},
+            {"icon": "🤔", "text": "UpToDate", "href": "https://uptodate.com", "enabled": false}
         ]
     }
 }
