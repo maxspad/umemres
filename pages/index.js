@@ -81,24 +81,6 @@ export default function Home(props) {
                     <Gridbox id="other" data={links}>
                         <OutsideSearchForm placeholder="Search WikEM" btnClass="btn-secondary" urlBase="https://wikem.org/w/index.php?search=" />
                         <OutsideSearchForm placeholder="Search UpToDate" btnClass="btn-success" urlBase="https://www.uptodate.com/contents/search?search=" />
-                        {/* <Form className='mx-4 my-2' 
-                            onSubmit={(event) => {
-                                event.preventDefault();
-                                const url_base = "https://wikem.org/w/index.php?search=";
-                                const url_to_open = url_base + wikEMSearch;
-                                window.open(encodeURI(url_to_open), '_blank');
-                            }}>
-                            <InputGroup size="sm">
-                                    <Form.Control type="input" placeholder="Search WikEM" onChange={(e) => {setWikEMSearch(e.target.value);}}></Form.Control>
-                                    <Button className='btn-secondary' type="submit">🔎</Button>
-                            </InputGroup>
-                        </Form>
-                        <Form className="mx-4 my-2">
-                            <InputGroup size="sm">
-                                    <Form.Control type="input" placeholder="Search UpToDate"></Form.Control>
-                                    <Button className='btn-success'>🔎</Button>
-                            </InputGroup>
-                        </Form>              */}
                     </Gridbox>
                 </Row>
             </Container>
