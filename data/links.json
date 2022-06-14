@@ -36,7 +36,7 @@
     "doc" : {
         "title": "Documentation",
         "links": [
-            {"icon": "💨", "text": "Discharge Instructions", "href": "documentation/dc_instruct"}
+            {"icon": "💨", "text": "Discharge Instructions", "href": "dc_instruct", "isAppLink": true}
         ]
     },
 
