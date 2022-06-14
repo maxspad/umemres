@@ -1,12 +1,11 @@
 import path from 'path';
-import fs from 'fs';
+
+import { parseDCInstruct } from '../utils/parsedcinstruct';
 
 import Layout from '../components/layout';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
-
-import slugify from 'slugify';
 
 export default function DcInstruct(props) {
   const dcInstructs = props.dcInstructs;
@@ -14,6 +13,11 @@ export default function DcInstruct(props) {
   return (
     <Layout>
       <h1 className='display-4' id="top">Discharge Instructions</h1>
+      <p className='text-muted'>
+        The majority of these discharge instructions were taken from <a href="https://natedotphrase.com/portfolio/dc-instructions">here</a>. They have been
+        slightly tweaked, but I do not own the original content.
+        <br></br><em>Always read over your instructions before printing!</em>
+      </p>
       <Container className="my-4 py-4 border-top border-bottom">
         <Row>
           <Col>
@@ -52,12 +56,6 @@ export default function DcInstruct(props) {
 
 export async function getStaticProps() {
   const dc_instruct_html_path = path.join(process.cwd(), 'data/documentation/dc_instruct.html');
-  const fileContents = fs.readFileSync(dc_instruct_html_path, 'utf8');
-  const regexp = /1>(.*?)<\/h1>(.*?)<h/gs
-  const results = [...fileContents.matchAll(regexp)];
-  console.log(results);
-  const dcInstructs = results.map((match, i) => {
-    return {id: slugify(match[1]), label: match[1], content: match[2]};
-  });
+  const dcInstructs = parseDCInstruct(dc_instruct_html_path);
   return {props: {dcInstructs: dcInstructs}};
 }
