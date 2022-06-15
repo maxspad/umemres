@@ -14,6 +14,8 @@ import 'react-bootstrap-typeahead/css/Typeahead.bs5.css';
 
 import { useState } from 'react';
 
+import Head from 'next/head';
+
 import fs from "fs";
 import path from 'path';
 
@@ -27,6 +29,9 @@ export default function Home(props) {
     const [wikEMSearch, setWikEMSearch] = useState('');
     return (
         <Layout>
+            <Head>
+                <title>EM Resources</title>
+            </Head>
             <Container>
                 <Row>
                     <Gridbox id="theU" data={links}>

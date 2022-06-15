@@ -7,10 +7,16 @@ import Layout from '../components/layout';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
+import Head from 'next/head';
+
 export default function DcInstruct(props) {
   const dcInstructs = props.dcInstructs;
   // console.log(dcInstructs);
   return (
+    <>
+    <Head>
+      <title>EM Resources | DC Instructions</title>
+    </Head>
     <Layout>
       <h1 className='display-4' id="top">Discharge Instructions</h1>
       <p className='text-muted'>
@@ -51,6 +57,7 @@ export default function DcInstruct(props) {
         </>);
       })}
     </Layout>
+    </>
   );
 }
 
