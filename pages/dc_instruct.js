@@ -18,7 +18,7 @@ export default function DcInstruct(props) {
       <title>EM Resources | DC Instructions</title>
     </Head>
     <Layout>
-      <h1 className='display-4' id="top">Discharge Instructions</h1>
+      <h1 className='display-5' id="top">Discharge Instructions</h1>
       <p className='text-muted'>
         The majority of these discharge instructions were taken from <a href="https://natedotphrase.com/portfolio/dc-instructions">here</a>. They have been
         slightly tweaked, but I do not own the original content.

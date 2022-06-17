@@ -17,7 +17,8 @@
     "hurley" : {
         "title": "Hurley",
         "links": [
-            {"icon": "🧠", "text": "Pre-filled Cert", "href": "hurley/hurley_cert.pdf"}
+            {"icon": "🧠", "text": "Pre-filled Cert", "href": "hurley/hurley_cert.pdf"},
+            {"icon": "🏥", "text": "How to Admit", "href": "hurley_admit", "isAppLink": true, "enabled": true}
         ]
     },
 
@@ -44,7 +45,8 @@
         "title": "Other Stuff",
         "links": [
             {"icon": "🩺", "text": "WikEM", "href": "https://wikem.org", "enabled": false},
-            {"icon": "🤔", "text": "UpToDate", "href": "https://uptodate.com", "enabled": false}
+            {"icon": "🤔", "text": "UpToDate", "href": "https://uptodate.com", "enabled": false},
+            {"icon": "🆘", "text": "Survival Guides", "href": "https://docs.google.com/document/d/1GN4FPpbWy7iL23ZVMrWPvfpN9MV6feWYInREgYymtLQ/edit#heading=h.p3yb24t88b7r", "enabled": true}
         ]
     }
 }
