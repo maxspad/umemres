@@ -10,7 +10,9 @@
     "joes" : {
         "title": "Joe's",
         "links": [
-            {"icon": "🧠", "text": "Pre-filled Cert", "href": "joes/joes_cert.pdf"}
+            {"icon": "🧠", "text": "Pre-filled Cert", "href": "joes/joes_cert.pdf"},
+            {"icon": "💓", "text": "hsTrop Pathway", "href": "joes/sj_hstrop_algorithm.pdf"},
+            {"icon": "🩸", "text": "SJ Anticoag Reversal", "href": "joes/sj_anticoag_reversal.pdf"}
         ]
     },
 
