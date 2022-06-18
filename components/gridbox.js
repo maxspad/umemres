@@ -31,22 +31,6 @@ export default function Gridbox(props) {
                     </Card.Text>
                 </Card.Body>
             </Card>
-            {/* <div className='border bg-light p-3' style={{height: "100%"}}>
-                <h2>{data.title}</h2>
-                {props.children}
-                <ul>
-                    {data.links.map((obj, i) => {
-                        if ((obj.enabled) || (obj.enabled == null)) {
-                            return (
-                                <li>
-                                    <a href={obj.href} className="text-decoration-none" target="_blank">{obj.icon}</a>
-                                    <a href={obj.href} target="_blank">{obj.text}</a>
-                                </li>
-                            );
-                        }
-                    })}
-                </ul>
-            </div> */}
         </Col> 
         <style jsx>{`
                 .mycard {
