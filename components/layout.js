@@ -37,7 +37,10 @@ export default function Layout({ children }) {
             {children}
         </main>
         <footer className='pt-3 mt-5 mb-2 text-muted border-top'>
-            This content is meant to be a useful aid; it does not replace clinical judgement. · © 2022 Maxwell Spadafore
+            <small>This website is meant as a useful aid for personal use only. The links included on this page are not professionally
+            maintained and could be out of date; this website and the resources herein cannot replace clinical judgement.
+            Including the resources on this page does not imply the endorsement of the University of Michigan, Trinity Health,
+            Hurley Hospital, or any other organization.</small>
         </footer>
     </Container>
     </>
