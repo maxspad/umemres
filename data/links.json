@@ -30,7 +30,8 @@
             {"icon": "💊", "text": "Adult Dosing", "href": "https://www.med.umich.edu/asp/pdf/adult_guidelines/ABX-dosing_ADULT.pdf"},
             {"icon": "😷", "text": "PNA", "href": "https://www.med.umich.edu/asp/pdf/adult_guidelines/Pneumonia_ADULT.pdf"},
             {"icon": "🤮", "text": "Abdominal", "href": "https://www.med.umich.edu/asp/pdf/adult_guidelines/Intra-ab_ADULT.pdf"},
-            {"icon": "💦", "text": " UTI", "href": "https://www.med.umich.edu/asp/pdf/adult_guidelines/UTI_ADULT.pdf"},
+            {"icon": "💦", "text": "UTI", "href": "https://www.med.umich.edu/asp/pdf/adult_guidelines/UTI_ADULT.pdf"},
+            {"icon": "🦵🏼", "text": "Skin", "href": "https://www.med.umich.edu/asp/pdf/adult_guidelines/SSTI_ADULT.pdf"},
             {"icon": "👵🏼", "text": "All Adult", "href": "https://www.med.umich.edu/asp/adult.html"},
             {"icon": "👶🏼", "text": "All Peds", "href": "https://www.med.umich.edu/asp/peds.html"}
         ]
