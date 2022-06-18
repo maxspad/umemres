@@ -19,7 +19,7 @@ export default function Layout({ children }) {
     </Head>
     <Container className='mx-auto p-3'>
         <header className='container border-bottom pb-3 mb-4 align-items-center'>
-            <a href='' className="text-decoration-none">
+            <a href='/' className="text-decoration-none">
                 <Container fluid>
                 <Row>
                     <Col xs={3} sm={2} md={2} lg={1}>
