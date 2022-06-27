@@ -50,7 +50,7 @@
         "links": [
             {"icon": "🩺", "text": "WikEM", "href": "https://wikem.org", "enabled": false},
             {"icon": "🤔", "text": "UpToDate", "href": "https://uptodate.com", "enabled": false},
-            {"icon": "🆘", "text": "Survival Guides", "href": "https://docs.google.com/document/d/1GN4FPpbWy7iL23ZVMrWPvfpN9MV6feWYInREgYymtLQ/edit#heading=h.p3yb24t88b7r", "enabled": true},
+            {"icon": "🆘", "text": "Survival Guides", "href": "https://docs.google.com/document/d/1GN4FPpbWy7iL23ZVMrWPvfpN9MV6feWYInREgYymtLQ/edit#heading=h.p3yb24t88b7r", "enabled": false},
             {"icon": "Ⓜ️", "text": "MedHub", "href": "https://um.medhub.com/u/r/myhome.mh", "enabled": true},
             {"icon": "📅", "text": "ShiftAdmin", "href": "https://www.shiftadmin.com/", "enabled": true}
         ]
