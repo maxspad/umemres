@@ -37,10 +37,11 @@ export default function Layout({ children }) {
             {children}
         </main>
         <footer className='pt-3 mt-5 mb-2 text-muted border-top'>
-            <small>This website is meant as a useful aid for personal use only. The links included on this page are not professionally
+            <small>This is a useful aid for personal use only. The links included on this page are not professionally
             maintained and could be out of date; this website and the resources herein cannot replace clinical judgement.
             Including the resources on this page does not imply the endorsement of the University of Michigan, Trinity Health,
-            Hurley Hospital, or any other organization.</small>
+            Hurley Hospital, or any other organization. This website uses Google Analytics to collect user engagement data.
+            This is used to enhance website features and could be used for research publication in the future.</small>
         </footer>
     </Container>
     </>
