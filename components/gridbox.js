@@ -1,6 +1,7 @@
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
 
 export default function Gridbox(props) {
     const id = props.id; 
@@ -15,18 +16,29 @@ export default function Gridbox(props) {
                     <Card.Text>
                         {props.children}
                         <Container className="px-2">
-                        <ul className="list-unstyled">
-                            {data.links.map((obj, i) => {
-                                if ((obj.enabled) || (obj.enabled == null)) {
-                                    return (
-                                        <li>
-                                            <a href={obj.href} className="text-decoration-none" target="_blank">{obj.icon}</a>
-                                            <a href={obj.href} target="_blank">{obj.text}</a>
-                                        </li>
-                                    );
-                                }
-                            })}
-                        </ul>
+                            <Row>
+                                {data.links.map((objcol, i) => {
+                                    if (objcol != null) {
+                                        return (
+                                            <Col>
+                                                {objcol.header ? <h5>{objcol.header}</h5> : null}
+                                                <ul className="list-unstyled">
+                                                    {objcol.links.map((obj, j) => {
+                                                        if (obj.enabled || (obj.enabled == null)) {
+                                                            return (
+                                                                <li>
+                                                                    <a href={obj.href} className="text-decoration-none" target="_blank">{obj.icon}</a>
+                                                                    <a href={obj.href} target="_blank">{obj.text}</a>
+                                                                </li>                                                        
+                                                            );
+                                                        }
+                                                    })}
+                                                </ul>
+                                            </Col>
+                                        )
+                                    }
+                                })}
+                            </Row>
                         </Container>
                     </Card.Text>
                 </Card.Body>

@@ -50,7 +50,7 @@ export default function Home(props) {
                     <Gridbox id="doc" data={links}>
                         <Form className="mx-2 my-2">
                             <InputGroup size="sm">
-                                <InputGroup.Text>💨 <a href={links.doc.links[0].href} target="_blank">DC Instructs</a></InputGroup.Text>
+                                <InputGroup.Text>💨 <a href={links.doc.links[0].links[0].href} target="_blank">DC Instructs</a></InputGroup.Text>
                                 <Typeahead
                                     options={props.dcInstructs}
                                     placeholder='Quick search...'
@@ -59,7 +59,7 @@ export default function Home(props) {
                                     onChange={(sel) => {
                                         const selected = sel[0];
                                         if (selected != null) {
-                                            window.open(links.doc.links[0].href + '#' + selected.id, '_blank');
+                                            window.open(links.doc.links[0].links[0].href + '#' + selected.id, '_blank');
                                         }
                                     }}
                                 />
