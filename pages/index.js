@@ -35,48 +35,12 @@ export default function Home(props) {
             <Container>
                 <Row>
                     <Gridbox id="theU" data={links}>
-                        <Form className='mx-2 my-2'>
+                        <Form className='mx-2 my-2' method="get" action="https://paging.med.umich.edu/PagingMobile/" target='_blank'>
                             <InputGroup size="sm">
-                                <InputGroup.Text>📟 <a href="https://uhmspaging.med.umich.edu/" target="_blank">Paging</a></InputGroup.Text>
-                                <Typeahead
-                                    options={props.pagingOptions}
-                                    align="left"
-                                    placeholder="Type service/pager/name"
-                                    // highlightOnlyResult={true}
-                                    emptyLabel="Press enter to search name/pager number..."
-                                    allowNew={true}
-                                    newSelectionPrefix="Search name/pager number: "
-                                    id="paging-typeahead"
-                                    size="sm"
-                                    onChange={(sel) => {
-                                        if (sel.length == 0) { return; }
-
-                                        sel = sel[0];
-                                        const url_root = "https://uhmspaging.med.umich.edu/homepaging/PagingSend/"
-                                        var url_to_open = "";
-                                        if (sel.customOption == false) {
-                                            url_to_open = url_root + "oncallSchedules.aspx?val=" + sel.id;
-                                        }
-                                        else {
-                                            const sel_text = sel.label;
-                                            const sel_as_num = parseInt(sel_text);
-                                            console.log(sel_text, sel_as_num);
-                                            if (!isNaN(sel_as_num)) {
-                                                url_to_open = url_root + "searchResults.aspx?type=PAGER&val=" + sel_text + "&rec=1";
-                                            }
-                                            else {
-                                                url_to_open = url_root +  "searchResults.aspx?type=NAME&val=" + sel_text + "&rec=1";
-                                            }
-                                        }
-                                        window.open(url_to_open, "_blank");
-                                        
-                                        console.log("Hit selected, sel is ")
-                                        console.log(sel)
-                                        if (sel.length == 0) { setSelected({id: 0, label: "nothing"})}
-                                        else {setSelected(sel[0])}
-                                        // console.log(selected)
-                                    }}
-                                />
+                                <InputGroup.Text>📟 <a href="https://paging.med.umich.edu/PagingMobile/home" target="_blank">Paging</a></InputGroup.Text>
+                                <input type="hidden" name="app" value="IntWeb" />
+                                <input type="hidden" name="fun" value="search" />
+                                <Form.Control type="text" name="val" placeholder='Type pager/name' />  
                             </InputGroup>
                         </Form>
                     </Gridbox>
