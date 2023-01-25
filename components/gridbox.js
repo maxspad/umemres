@@ -2,6 +2,8 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
+import Badgeable from "../components/badgeable"
+import { Badge } from 'react-bootstrap'
 
 export default function Gridbox(props) {
     const id = props.id; 
@@ -21,7 +23,7 @@ export default function Gridbox(props) {
                                     if (objcol != null) {
                                         return (
                                             <Col>
-                                                {objcol.header ? <h5>{objcol.header}</h5> : null}
+                                                {objcol.header ? <h5>{objcol.header}&nbsp;<Badgeable text={objcol.badge} /></h5> : null}
                                                 <ul className="list-unstyled">
                                                     {objcol.links.map((obj, j) => {
                                                         if (obj.enabled || (obj.enabled == null)) {
@@ -29,6 +31,7 @@ export default function Gridbox(props) {
                                                                 <li>
                                                                     <a href={obj.href} className="text-decoration-none" target="_blank">{obj.icon}</a>
                                                                     <a href={obj.href} target="_blank">{obj.text}</a>
+                                                                    &nbsp;<Badgeable text={obj.badge} />
                                                                 </li>                                                        
                                                             );
                                                         }

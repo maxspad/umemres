@@ -5,7 +5,7 @@
             {
                 "header": null,
                 "links": [
-                    {"icon": "📞", "text": "Phone Numbers", "href": "theu_phone_numbers", "isAppLink": true, "enabled": true},
+                    {"icon": "📞", "text": "Phone Numbers", "href": "theu_phone_numbers", "isAppLink": true, "enabled": true, "badge": "New!"},
                     {"icon": "🏠", "text": "Clinical Homepage", "href": "https://www.med.umich.edu/clinical/"},
                     {"icon": "📃", "text": "Triage Guidelines", "href":"https://em.i.medicine.umich.edu/clinical-operations/service-triage-guidelines"}
                 ]
@@ -61,6 +61,7 @@
             },
             {
                 "header": "St. Joe's",
+                "badge": "New!",
                 "links": [
                     {"icon": "🥚", "text": "Text", "href": "blah.com"}
                 ]
