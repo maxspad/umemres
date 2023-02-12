@@ -59,13 +59,6 @@
                     {"icon": "👵🏼", "text": "All Adult", "href": "https://www.med.umich.edu/asp/adult.html"},
                     {"icon": "👶🏼", "text": "All Peds", "href": "https://www.med.umich.edu/asp/peds.html"}
                 ]
-            },
-            {
-                "header": "St. Joe's",
-                "badge": "New!",
-                "links": [
-                    {"icon": "🥚", "text": "Text", "href": "blah.com"}
-                ]
             }
         ]
     },
