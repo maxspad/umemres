@@ -59,6 +59,19 @@
                     {"icon": "👵🏼", "text": "All Adult", "href": "https://www.med.umich.edu/asp/adult.html"},
                     {"icon": "👶🏼", "text": "All Peds", "href": "https://www.med.umich.edu/asp/peds.html"}
                 ]
+            },
+            {
+                "header": "Joe's",
+                "badge": "New!",
+                "links": [
+                    {"icon": "😷", "text": "PNA", "href": "https://mytrinityhealth.sharepoint.com/sites/MI-SJMAAPhysicians/SJMAAPhyASTP%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMI%2DSJMAAPhysicians%2FSJMAAPhyASTP%20Documents%2FPneumonia%2Epdf&parent=%2Fsites%2FMI%2DSJMAAPhysicians%2FSJMAAPhyASTP%20Documents"},
+                    {"icon": "🤮", "text": "Abdominal", "href": "https://mytrinityhealth.sharepoint.com/:b:/r/sites/MI-SJMAAPhysicians/SJMAAPhyASTP%20Documents/Intra-abdominal%20Infections.pdf?csf=1&web=1&e=4dlnY0"},
+                    {"icon": "💦", "text": "UTI", "href": "https://mytrinityhealth.sharepoint.com/:b:/r/sites/MI-SJMAAPhysicians/SJMAAPhyASTP%20Documents/Urinary%20Tract%20Infections.pdf?csf=1&web=1&e=8lrXgW"},
+                    {"icon": "🦵🏼", "text": "Skin", "href": "https://mytrinityhealth.sharepoint.com/:b:/r/sites/MI-SJMAAPhysicians/SJMAAPhyASTP%20Documents/Skin%20and%20Soft%20Tissue%20Infections.pdf?csf=1&web=1&e=mgHDgn"},
+                    {"icon": "🧠", "text": "Meningitis", "href": "https://mytrinityhealth.sharepoint.com/:b:/r/sites/MI-SJMAAPhysicians/SJMAAPhyASTP%20Documents/Meningitis.pdf?csf=1&web=1&e=rUwl47"},
+                    {"icon": "🖤", "text": "Endocarditis", "href": "https://mytrinityhealth.sharepoint.com/:b:/r/sites/MI-SJMAAPhysicians/SJMAAPhyASTP%20Documents/Infective%20Endocarditis.pdf?csf=1&web=1&e=ygbXMs"},
+                    {"icon": "📃", "text": "All Guidelines", "href": "https://mytrinityhealth.sharepoint.com/sites/MI-SJMAAPhysicians/SJMAAPhyASTP%20Documents/Forms/AllItems.aspx?viewid=9b28bad5%2Dd009%2D480f%2Db5a1%2D2859b9e50406"}
+                ]      
             }
         ]
     },
