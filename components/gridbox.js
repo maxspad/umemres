@@ -23,7 +23,7 @@ export default function Gridbox(props) {
                                     if (objcol != null) {
                                         return (
                                             <Col>
-                                                {objcol.header ? <h5>{objcol.header}&nbsp;<Badgeable text={objcol.badge} /></h5> : null}
+                                                {objcol.header ? <h5>{objcol.header}&nbsp;{objcol.needsAuth ? String.fromCodePoint(128274) : null}&nbsp;<Badgeable text={objcol.badge} /></h5> : null}
                                                 <ul className="list-unstyled">
                                                     {objcol.links.map((obj, j) => {
                                                         if (obj.enabled || (obj.enabled == null)) {
@@ -31,6 +31,7 @@ export default function Gridbox(props) {
                                                                 <li>
                                                                     <a href={obj.href} className="text-decoration-none" target="_blank">{obj.icon}</a>
                                                                     <a href={obj.href} target="_blank">{obj.text}</a>
+                                                                    &nbsp;{obj.needsAuth ? String.fromCodePoint(128274) : null}
                                                                     &nbsp;<Badgeable text={obj.badge} />
                                                                 </li>                                                        
                                                             );

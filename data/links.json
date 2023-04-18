@@ -5,7 +5,7 @@
             {
                 "header": null,
                 "links": [
-                    {"icon": "📞", "text": "Phone Numbers", "href": "theu_phone_numbers", "isAppLink": true, "enabled": true, "badge": "New!"},
+                    {"icon": "📞", "text": "Phone Numbers", "href": "theu_phone_numbers", "isAppLink": true, "enabled": true},
                     {"icon": "🏠", "text": "Clinical Homepage", "href": "https://www.med.umich.edu/clinical/"},
                     {"icon": "📃", "text": "Triage Guidelines", "href":"https://em.i.medicine.umich.edu/clinical-operations/service-triage-guidelines"}
                 ]
@@ -24,7 +24,14 @@
                     {"icon": "💘", "text": "hsTrop Pathway", "href": "joes/sj_hstrop_algorithm.pdf"},
                     {"icon": "💓", "text": "Afib Pathway", "href": "joes/sj_afib_pathway.pdf"},
                     {"icon": "🩸", "text": "SJ Anticoag Reversal", "href": "joes/sj_anticoag_reversal.pdf"},
-                    {"icon": "⚡", "text": "How to Interrogate Pacemakers", "href": "sj_interrogators", "isAppLink": true, "enabled": true, "badge": "New!"}
+                    {"icon": "⚡", "text": "How to Interrogate Pacemakers", "href": "sj_interrogators", "isAppLink": true, "enabled": true},
+                    {
+                        "icon": "📆", "text": "Attending Schedule", 
+                        "href": "https://drive.google.com/drive/folders/1hLeDEfT9Q5otUdFMMV1ZDfoRS4NTp9La?usp=sharing", 
+                        "enabled": true, 
+                        "needsAuth": true, 
+                        "badge": "New!"
+                    }
                 ]
             },
             null
@@ -62,7 +69,7 @@
             },
             {
                 "header": "Joe's",
-                "badge": "New!",
+                "needsAuth": true,
                 "links": [
                     {"icon": "😷", "text": "PNA", "href": "https://mytrinityhealth.sharepoint.com/sites/MI-SJMAAPhysicians/SJMAAPhyASTP%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMI%2DSJMAAPhysicians%2FSJMAAPhyASTP%20Documents%2FPneumonia%2Epdf&parent=%2Fsites%2FMI%2DSJMAAPhysicians%2FSJMAAPhyASTP%20Documents"},
                     {"icon": "🤮", "text": "Abdominal", "href": "https://mytrinityhealth.sharepoint.com/:b:/r/sites/MI-SJMAAPhysicians/SJMAAPhyASTP%20Documents/Intra-abdominal%20Infections.pdf?csf=1&web=1&e=4dlnY0"},
@@ -95,9 +102,9 @@
                 "links": [
                     {"icon": "🩺", "text": "WikEM", "href": "https://wikem.org", "enabled": false},
                     {"icon": "🤔", "text": "UpToDate", "href": "https://uptodate.com", "enabled": false},
-                    {"icon": "🆘", "text": "Survival Guides", "href": "https://docs.google.com/document/d/1GN4FPpbWy7iL23ZVMrWPvfpN9MV6feWYInREgYymtLQ/edit#heading=h.p3yb24t88b7r", "enabled": false},
-                    {"icon": "Ⓜ️", "text": "MedHub", "href": "https://um.medhub.com/u/r/myhome.mh", "enabled": true},
-                    {"icon": "📅", "text": "ShiftAdmin", "href": "https://www.shiftadmin.com/", "enabled": true}
+                    {"icon": "🆘", "text": "Survival Guides", "href": "https://drive.google.com/drive/folders/10Nb7t8lP8FQXeyxcLN2Mvge85M1hVM3U?usp=sharing", "enabled": true, "badge": "New!", "needsAuth": true},
+                    {"icon": "Ⓜ️", "text": "MedHub", "href": "https://um.medhub.com/u/r/myhome.mh", "enabled": true, "needsAuth": true},
+                    {"icon": "📅", "text": "ShiftAdmin", "href": "https://www.shiftadmin.com/", "enabled": true, "needsAuth": true}
                 ]
             },
             null
