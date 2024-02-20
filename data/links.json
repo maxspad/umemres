@@ -6,8 +6,16 @@
                 "header": null,
                 "links": [
                     {"icon": "📞", "text": "Phone Numbers", "href": "theu_phone_numbers", "isAppLink": true, "enabled": true},
-                    {"icon": "🏠", "text": "Clinical Homepage", "href": "https://www.med.umich.edu/clinical/"},
-                    {"icon": "📃", "text": "Triage Guidelines", "href":"https://em.i.medicine.umich.edu/clinical-operations/service-triage-guidelines"}
+                    {"icon": "〽️", "text": "Clinical Homepage", "href": "https://www.med.umich.edu/clinical/"},
+                    {"icon": "📃", "text": "Triage Guidelines", "href":"https://em.i.medicine.umich.edu/clinical-operations/service-triage-guidelines"},
+                    {
+                        "icon": "🏠", 
+                        "text": "HCaH Cheatsheet",
+                        "enabled": true,
+                        "needsAuth": true,
+                        "badge": "New!",
+                        "href": "https://umhealth.sharepoint.com/:p:/r/sites/um-health/_layouts/15/Doc.aspx?sourcedoc=%7BD56A8EA5-346D-4FCE-8FAC-F195BBEB9EE8%7D&file=HCAH%20pocket%20cards.pptx"
+                    }
                 ]
             },
             null
@@ -21,16 +29,13 @@
                 "header": null,
                 "links": [
                     {"icon": "🧠", "text": "Pre-filled Cert", "href": "joes/joes_cert.pdf"},
-                    {"icon": "💘", "text": "hsTrop Pathway", "href": "joes/sj_hstrop_algorithm.pdf"},
-                    {"icon": "💓", "text": "Afib Pathway", "href": "joes/sj_afib_pathway.pdf"},
-                    {"icon": "🩸", "text": "SJ Anticoag Reversal", "href": "joes/sj_anticoag_reversal.pdf"},
                     {"icon": "⚡", "text": "How to Interrogate Pacemakers", "href": "sj_interrogators", "isAppLink": true, "enabled": true},
+                    {"icon": "🤟", "text": "ASL Interpreter Services", "href": "joes/sj_interpreter_resources.pdf", "enabled": true, "badge": "New!"},
                     {
                         "icon": "📆", "text": "Attending Schedule", 
                         "href": "https://drive.google.com/drive/folders/1hLeDEfT9Q5otUdFMMV1ZDfoRS4NTp9La?usp=sharing", 
                         "enabled": true, 
-                        "needsAuth": true, 
-                        "badge": "New!"
+                        "needsAuth": true
                     }
                 ]
             },
@@ -102,7 +107,8 @@
                 "links": [
                     {"icon": "🩺", "text": "WikEM", "href": "https://wikem.org", "enabled": false},
                     {"icon": "🤔", "text": "UpToDate", "href": "https://uptodate.com", "enabled": false},
-                    {"icon": "🆘", "text": "Survival Guides", "href": "https://drive.google.com/drive/folders/10Nb7t8lP8FQXeyxcLN2Mvge85M1hVM3U?usp=sharing", "enabled": true, "badge": "New!", "needsAuth": true},
+                    {"icon": "🔢", "text": "MDCalc", "href": "https://mdcalc.com", "enabled": true, "badge": "New!"},
+                    {"icon": "🆘", "text": "Survival Guides", "href": "https://drive.google.com/drive/folders/10Nb7t8lP8FQXeyxcLN2Mvge85M1hVM3U?usp=sharing", "enabled": true, "needsAuth": true},
                     {"icon": "Ⓜ️", "text": "MedHub", "href": "https://um.medhub.com/u/r/myhome.mh", "enabled": true, "needsAuth": true},
                     {"icon": "📅", "text": "ShiftAdmin", "href": "https://www.shiftadmin.com/", "enabled": true, "needsAuth": true}
                 ]
