@@ -6,7 +6,7 @@
                 "header": null,
                 "links": [
                     {"icon": "📞", "text": "Phone Numbers", "href": "theu_phone_numbers", "isAppLink": true, "enabled": true},
-                    {"icon": "〽️", "text": "Clinical Homepage", "href": "https://www.med.umich.edu/clinical/"},
+                    {"icon": "〽️", "text": "Clinical Homepage", "href": "https://umhealth.sharepoint.com/sites/clinical"},
                     {"icon": "📃", "text": "Triage Guidelines", "href":"https://em.i.medicine.umich.edu/clinical-operations/service-triage-guidelines"},
                     {
                         "icon": "🏠", 
